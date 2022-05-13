@@ -18,6 +18,8 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
 import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
 import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { MedicoComponent } from './mantenimientos/medicos/medico.component';
 
 
 
@@ -35,6 +37,7 @@ import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
     UsuariosComponent,
     HospitalesComponent,
     MedicosComponent,
+    MedicoComponent,
   ],
   exports: [
     DashboardComponent,
@@ -49,7 +52,8 @@ import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
     SharedModule,
     RouterModule,
     ReactiveFormsModule,
-    ComponentsModule
+    ComponentsModule,
+    PipesModule
   ]
 })
 export class PagesModule { }
